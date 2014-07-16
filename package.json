@@ -1,0 +1,18 @@
+{
+  "name": "native-or-bluebird",
+  "description": "use either the native Promise or Bluebird",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "normalize/native-or-bluebird",
+  "keywords": [
+    "bluebird",
+    "promise",
+    "promises"
+  ]
+}
