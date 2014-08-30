@@ -2,16 +2,33 @@
 # native-or-bluebird
 
 [![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 [![Gittip][gittip-image]][gittip-url]
 
+Use either `bluebird` or the native `Promise` implementation.
+If no implementation is found, an error will be thrown:
+
 ```js
 var Promise = require('native-or-bluebird');
 ```
 
-You must install `bluebird` yourself for maximum compatibility.
+The goal of this library is to be able to eventually remove this line
+from your code and use native `Promise`s, allowing you to
+to write future-compatible code with ease.
+You should install `bluebird` in your libraries for maximum compatibility.
+
+If you do not want an error to be thrown,
+`require()` the `Promise` implementation directly.
+If no implementation is found, `undefined` will be returned.
+
+```js
+var Promise = require('native-or-bluebird/promise');
+if (Promise) // do stuff with promises
+```
 
 [npm-image]: https://img.shields.io/npm/v/native-or-bluebird.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/native-or-bluebird

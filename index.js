@@ -1,15 +1,9 @@
 
-var _Promise
-try {
-  _Promise = require('bluebird')
-} catch (_) {
-  _Promise = global.Promise
-}
+module.exports = require('./promise')
 
-if (!_Promise) {
+/* istanbul ignore next */
+if (!module.exports) {
   console.error('Neither `bluebird` nor the native `Promise` functions were found.')
   console.error('Please install `bluebird` yourself.')
   process.exit(1)
 }
-
-module.exports = _Promise

@@ -14,5 +14,15 @@
     "bluebird",
     "promise",
     "promises"
-  ]
+  ],
+  "devDependencies": {
+    "bluebird": "*",
+    "istanbul": "0",
+    "mocha": "1"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  }
 }
