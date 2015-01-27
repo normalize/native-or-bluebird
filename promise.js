@@ -1,8 +1,6 @@
 
-module.exports = global.Promise
-
-if (!module.exports) {
-  try {
-    module.exports = require('bluebird')
-  } catch (_) {}
+try {
+  module.exports = require('bluebird')
+} catch (_) {
+  module.exports = global.Promise
 }
