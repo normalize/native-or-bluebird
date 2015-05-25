@@ -8,6 +8,10 @@
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
+> As node 0.10 beceomes outdated and iojs is merged with node.js,
+> this module is now relevant to only a few platforms.
+> Thus, this module is considered obsolete.
+
 Use either `bluebird` or the native `Promise` implementation.
 If no implementation is found, an error will be thrown:
 
