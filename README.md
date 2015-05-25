@@ -7,7 +7,6 @@
 [![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
-[![Gittip][gittip-image]][gittip-url]
 
 Use either `bluebird` or the native `Promise` implementation.
 If no implementation is found, an error will be thrown:
@@ -44,5 +43,3 @@ if (Promise) // do stuff with promises
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/native-or-bluebird.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/native-or-bluebird
-[gittip-image]: https://img.shields.io/gittip/jonathanong.svg?style=flat-square
-[gittip-url]: https://www.gittip.com/jonathanong/
