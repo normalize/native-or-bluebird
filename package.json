@@ -18,7 +18,7 @@
   "devDependencies": {
     "bluebird": "*",
     "istanbul": "^0.4.0",
-    "mocha": "2.5.3"
+    "mocha": "3.0.1"
   },
   "scripts": {
     "test": "mocha --reporter spec",
